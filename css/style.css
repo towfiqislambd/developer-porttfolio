@@ -1,0 +1,403 @@
+/*===================== Common CSS =====================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/*================= Reuseable Component ================*/
+.primary-color {
+    color: #181818
+}
+
+.secondary-color {
+    color: #FD6E0A
+}
+
+.primary-btn {
+    background: #FD6E0A;
+    color: #fff;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.section-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #181818;
+    text-align: center;
+}
+
+.section-desc {
+    color: #474747;
+    font-size: 14px;
+    line-height: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    width: 650px;
+    margin: auto;
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 70px;
+}
+
+/*==================== Header part ====================*/
+header {
+    height: 95vh;
+    overflow: hidden;
+    background: url('../images/developer.png') no-repeat center left;
+    background-size: 70px;
+    margin-left: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+nav h2 {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #474747;
+    font-weight: 500;
+}
+
+header .hero-wrapper {
+    padding-top: 100px;
+    margin-left: 90px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background: url('../images/header_bg.png') no-repeat center right;
+    background-size: 660px 420px;
+}
+
+header .hero-wrapper h2 {
+    margin-bottom: 10px;
+    color: #474747
+}
+
+header .hero-wrapper h1 {
+    color: #000;
+    margin-bottom: 30px;
+    font-size: 52px;
+    font-size: 900;
+}
+
+header .hero-wrapper p {
+    line-height: 1.4rem;
+    width: 500px;
+    font-size: 14px;
+    color: #757575;
+    margin-bottom: 20px;
+}
+
+header .hero-wrapper button:last-child {
+    background: none;
+    color: #FD6E0A;
+    border: 1px solid #FD6E0A;
+    margin-left: 10px;
+}
+
+
+/*==================== About Us Part ====================*/
+#about-us {
+    padding: 150px 0;
+}
+
+#about-us .about-us-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 35px;
+}
+
+#about-us .about-us-wrapper p {
+    font-weight: 600;
+    line-height: 2rem;
+    color: #222 !important
+}
+
+#about-us .about-us-wrapper span {
+    color: #474747;
+    opacity: 0.8;
+}
+
+/*==================== todo Part ====================*/
+#todo {
+    padding: 120px 0;
+}
+
+#toto .todo-wrapper {
+    display: flex;
+    gap: 70px;
+}
+
+#toto .todo-wrapper img {
+    display: block;
+    margin-bottom: 30px;
+}
+
+#toto .todo-wrapper h4 {
+    margin-bottom: 20px;
+}
+
+#toto .todo-wrapper p {
+    color: #474747;
+    font-size: 14px;
+    line-height: 1.5rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+/*==================== Resume Part ====================*/
+#resume {
+    padding: 120px 0;
+}
+
+#resume h3 {
+    margin-bottom: 60px;
+}
+
+#resume h2 {
+    margin-bottom: 20px;
+    color: #474747;
+    opacity: 0.8;
+}
+
+#hesume hr {
+    color: #646262;
+    opacity: 0.1;
+
+}
+
+#resume .resume-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 70px;
+}
+
+#resume .resume-wrapper .single-box {
+    margin: 30px 0;
+}
+
+#resume .resume-wrapper .single-box p {
+    margin-bottom: 30px;
+    color: #181818;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+#resume .resume-wrapper .single-box h4 {
+    margin-bottom: 10px;
+}
+
+#resume .resume-wrapper .single-box span {
+    margin-bottom: 10px;
+    display: block;
+    color: #474747;
+    opacity: 0.8;
+}
+
+/*==================== Footer Part ====================*/
+footer {
+    padding: 80px 0;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    color: #474747;
+    font-size: 14px;
+    line-height: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    width: 500px;
+}
+
+footer a {
+    padding: 0 10px;
+}
+
+footer a:first-child {
+    padding-left: 0 !important;
+}
+
+footer input,
+footer textarea {
+    border: none;
+    outline: none;
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    padding-left: 0;
+}
+
+/*================== Responsive CSS ==================*/
+@media screen and (max-width:1140px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero-wrapper .hero-empty img {
+        transform: translate(-100px, -90px) !important
+    }
+}
+
+@media screen and (max-width:992px) {
+    .hero-wrapper .hero-empty img {
+        width: 360px !important;
+        transform: translate(-120px, -45px) !important
+    }
+
+    header .hero-wrapper p {
+        max-width: 350px;
+    }
+
+    #about-us {
+        padding: 70px 0;
+    }
+
+    .section-desc {
+        width: 95%;
+    }
+
+    #toto .todo-wrapper {
+        gap: 30px;
+    }
+
+    #resume .resume-wrapper {
+        grid-template-columns: 100%;
+        grid-column-gap: 70px;
+    }
+
+    .footer-wrapper {
+        grid-template-columns: 100%;
+        gap: 30px
+    }
+}
+
+@media screen and (max-width:768px) {
+    header .hero-wrapper p {
+        width: 300px;
+    }
+
+    header {
+        background: none;
+        margin-left: 0;
+        height: 70vh !important;
+    }
+
+    header .hero-wrapper {
+        margin-left: 20px;
+    }
+
+    .hero-wrapper .hero-empty img {
+        width: 280px !important;
+        transform: translate(-70px, -80px) !important
+    }
+
+    header .hero-wrapper h1 {
+        margin-bottom: 10px;
+        font-size: 35px !important;
+    }
+
+    header .hero-wrapper p {
+        width: 300px;
+        margin-bottom: 20px;
+        line-height: 1.3rem;
+    }
+
+    .primary-btn {
+        padding: 10px 15px;
+    }
+
+    #about-us .about-us-wrapper {
+        flex-direction: column;
+    }
+
+    #toto .todo-wrapper {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:576px) {
+    header .hero-wrapper {
+        padding-top: 100px;
+        margin-left: 0px;
+        display: grid;
+        grid-template-columns: auto;
+        background: none;
+        text-align: center;
+    }
+
+    header {
+        height: auto !important;
+    }
+
+    header .hero-wrapper p {
+        width: 100%;
+    }
+
+    header .hero-wrapper p {
+        max-width: 100%;
+    }
+
+    .hero-wrapper .hero-empty img {
+        width: 300px !important;
+        transform: translate(-20px, 10px) !important;
+        margin: auto !important
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 30px
+    }
+
+    #toto .todo-wrapper {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    #toto .todo-wrapper img {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
